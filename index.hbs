@@ -4,11 +4,11 @@ pageSubtitle: "Не туда попали"
 ---
 <html lang="en">
 	<head>
-		<script src="src/index.js" type="module"></script>
-    <link rel="stylesheet" href="/src/pages/Error404Page/Error404Page.sass">
-    <title>
-      {{pageTitle}}
-    </title>
+      <script src="src/index.js" type="module"></script>
+      <link rel="stylesheet" href="index.sass">
+      <title>
+        {{pageTitle}}
+      </title>
 	</head>
 	<body>
       <div class="Error404Page__wrap">
@@ -20,9 +20,9 @@ pageSubtitle: "Не туда попали"
             {{pageSubtitle}}
           </div>
           <div class="Error404Page__link">
-            {{>button label="Кликай сюда" }}
-            {{>button label="Или сюда" }}
-            {{>a text="Ссылка на страницу 404" address="404"}}
+            {{>button label="Click here" class="secondary" }}
+            {{>button label="Or here" }}
+            {{>a text="Sign in" address="src/pages/signInPage/signInPage.hbs"}}
           </div>
         </div>
       </div>
