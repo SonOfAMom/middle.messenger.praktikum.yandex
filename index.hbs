@@ -1,0 +1,28 @@
+---
+pageTitle: "404"
+pageSubtitle: "Не туда попали"
+---
+<html>
+	<head>
+		<script src="src/index.js" type="module"></script>
+    <link rel="stylesheet" href="/src/pages/Error404Page/Error404Page.sass">
+    <title>
+      {{pageTitle}}
+    </title>
+	</head>
+	<body>
+		<div class="Error404Page__wrap">
+      <div class="Error404Page__item">
+				<div class="Error404Page__title">
+					{{pageTitle}}
+				</div>
+				<div class="Error404Page__subtitle">
+					{{pageSubtitle}}
+				</div>
+				<div class="Error404Page__link">
+					{{>a }}
+				</div>
+			</div>
+    </div>
+	</body>
+</html>
