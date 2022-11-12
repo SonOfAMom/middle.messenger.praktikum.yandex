@@ -1,0 +1,29 @@
+---
+pageTitle: "Log in"
+---
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/index.sass">
+  <title>
+    {{title}}
+  </title>
+</head>
+<body>
+  <main class="log-in-page">
+    <div class="popup">
+      {{>title text="Log in to Messenger"}}
+      <div class="log-in-page__form-body">
+        {{>formInput name="login" type="text" placeholder="Login"}}
+        {{>formInput
+          name="password"
+          type="password"
+          placeholder="Password"
+          errorMessage="Wrong password"
+        }}
+      </div>
+      {{>button label="Log in" class=""}}
+      {{>button label="Create account" class="secondary"}}
+    </div>
+  </main>
+</body>
+</html>
