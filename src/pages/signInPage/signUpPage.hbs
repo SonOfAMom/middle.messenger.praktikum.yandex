@@ -11,6 +11,7 @@ pageTitle: "Sign in"
 <body>
   <div class="sign-up-page">
     <div class="popup">
+      {{>title text="Create account"}}
       <div class="sign-up-page__form-body">
         {{>formInput label="Email" name="email" type="text" placeholder="email@address.com"}}
         {{>formInput label="Login" name="login" type="text"}}
@@ -26,7 +27,7 @@ pageTitle: "Sign in"
         }}
         {{>formInput label="Repeat password" name="repeat_password" type="password" invalid=true}}
       </div>
-      {{>button label="Create account" class=""}}
+      {{>button label="Sign up" class=""}}
       {{>button label="Log in" class="secondary"}}
     </div>
   </div>
