@@ -19,6 +19,11 @@ pageTitle: "Profile"
     {{>formInput label="Display name" name="display_name" type="text" value="Lord" readonly=true}}
     {{>formInput label="Phone" name="phone" type="tel" value="+77878782348" readonly=true}}
   </div>
+  <div class="profile-page__links">
+    {{>a class="profile-page__link" address="#" text="Edit profile info"}}
+    {{>a class="profile-page__link" address="#" text="Change password"}}
+    {{>a class="profile-page__link_exit" address="/index.hbs" text="Close"}}
+  </div>
 </main>
 </body>
 </html>
