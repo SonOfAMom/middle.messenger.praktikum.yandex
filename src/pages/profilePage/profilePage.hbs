@@ -21,7 +21,11 @@ pageTitle: "Profile"
   </div>
   <div class="profile-page__links">
     {{>a class="profile-page__link" address="#" text="Edit profile info"}}
-    {{>a class="profile-page__link" address="#" text="Change password"}}
+    {{>a
+      class="profile-page__link"
+      address="../changePasswordPage/changePasswordPage.hbs"
+      text="Change password"
+    }}
     {{>a class="profile-page__link_exit" address="/index.hbs" text="Close"}}
   </div>
 </main>
