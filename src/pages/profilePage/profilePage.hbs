@@ -10,6 +10,7 @@ pageTitle: "Profile"
 </head>
 <body>
 <main class="profile-page">
+  {{>avatar src="/src/static/img/avatarPlaceholder.jpg"}}
   {{>title text="User Name"}}
   <div>
     {{>formInput label="Email" name="email" type="text" value="email@gmail.com" readonly=true}}
@@ -23,7 +24,7 @@ pageTitle: "Profile"
     {{>a class="profile-page__link" address="#" text="Edit profile info"}}
     {{>a
       class="profile-page__link"
-      address="../changePasswordPage/changePasswordPage.hbs"
+      address="/src/pages/changePasswordPage/changePasswordPage.hbs"
       text="Change password"
     }}
     {{>a class="profile-page__link_exit" address="/index.hbs" text="Close"}}
