@@ -5,6 +5,8 @@
     name="{{name}}" id="{{name}}"
     type="{{type}}"
     placeholder="{{placeholder}}"
+    value="{{value}}"
+    {{#if readonly}}readonly{{/if}}
   >
   {{#if errorMessage}}
     <span class="form-input__errorMessage">{{errorMessage}}</span>

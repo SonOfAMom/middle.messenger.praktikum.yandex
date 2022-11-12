@@ -1,0 +1,24 @@
+---
+pageTitle: "Profile"
+---
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/index.sass">
+  <title>
+    {{title}}
+  </title>
+</head>
+<body>
+<main class="profile-page">
+  {{>title text="User Name"}}
+  <div>
+    {{>formInput label="Email" name="email" type="text" value="email@gmail.com" readonly=true}}
+    {{>formInput label="Login" name="login" type="text" value="unique3" readonly=true}}
+    {{>formInput label="First name" name="first_name" type="text" value="User" readonly=true}}
+    {{>formInput label="Second name" name="second_name" type="text" value="Name" readonly=true}}
+    {{>formInput label="Display name" name="display_name" type="text" value="Lord" readonly=true}}
+    {{>formInput label="Phone" name="phone" type="tel" value="+77878782348" readonly=true}}
+  </div>
+</main>
+</body>
+</html>
