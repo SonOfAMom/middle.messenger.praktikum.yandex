@@ -1,0 +1,28 @@
+---
+pageTitle: "Sign in"
+---
+<html lang="en">
+<head>
+  <link rel="stylesheet" href="/index.sass">
+  <title>
+    {{title}}
+  </title>
+</head>
+<body>
+  <div class="sign-up-page">
+    <div class="popup">
+      <div class="sign-up-page__form-body">
+        {{>formInput label="Email" name="email" type="text" placeholder="email@address.com"}}
+        {{>formInput label="Login" name="login" type="text"}}
+        {{>formInput label="First name" name="first_name" type="text"}}
+        {{>formInput label="Second name" name="second_name" type="text"}}
+        {{>formInput label="Phone" name="phone" type="tel"}}
+        {{>formInput label="Password" name="password" type="password"}}
+        {{>formInput label="Repeat password" name="repeat_password" type="password"}}
+      </div>
+      {{>button label="Create account" class=""}}
+      {{>button label="Log in" class="secondary"}}
+    </div>
+  </div>
+</body>
+</html>
