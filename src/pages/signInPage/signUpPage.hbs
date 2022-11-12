@@ -17,8 +17,14 @@ pageTitle: "Sign in"
         {{>formInput label="First name" name="first_name" type="text"}}
         {{>formInput label="Second name" name="second_name" type="text"}}
         {{>formInput label="Phone" name="phone" type="tel"}}
-        {{>formInput label="Password" name="password" type="password"}}
-        {{>formInput label="Repeat password" name="repeat_password" type="password"}}
+        {{>formInput
+          label="Password"
+          name="password"
+          type="password"
+          invalid=true
+          errorMessage="Passwords don't match"
+        }}
+        {{>formInput label="Repeat password" name="repeat_password" type="password" invalid=true}}
       </div>
       {{>button label="Create account" class=""}}
       {{>button label="Log in" class="secondary"}}
