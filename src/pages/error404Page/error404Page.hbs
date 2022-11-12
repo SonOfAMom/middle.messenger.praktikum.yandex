@@ -1,0 +1,32 @@
+---
+pageTitle: "Error 404"
+title: "404"
+---
+<html lang="en">
+
+<head>
+  <link rel="stylesheet" href="/index.sass">
+  <title>
+    {{pageTitle}}
+  </title>
+</head>
+
+<body>
+  <main class="error-404-page">
+    <div class="container">
+      <div class="error-404-page__body">
+        <div class="error-404-page__title">
+          {{title}}
+        </div>
+        <div class="error-404-page__subtitle">
+          Didn't get there
+        </div>
+        <div class="error-404-page__link">
+          {{>a address="/src/pages/dialogsPage/dialogsPage.hbs" text="Back to chats"}}
+        </div>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
