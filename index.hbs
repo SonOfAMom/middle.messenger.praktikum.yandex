@@ -1,6 +1,5 @@
 ---
 pageTitle: "Main page"
-pageSubtitle: "All pages list:"
 ---
 <html lang="en">
 	<head>
@@ -10,18 +9,16 @@ pageSubtitle: "All pages list:"
       </title>
 	</head>
 	<body>
-      <div class="Error404Page__subtitle">
-        {{pageSubtitle}}
-      </div>
-      <div class="Error404Page__link">
-        {{>button label="Click here" class="secondary" }}
-        {{>button label="Or here" }}
-        {{>a text="Sign in" address="src/pages/signInPage/signUpPage.hbs"}}
-        {{>a text="Log in" address="src/pages/logInPage/logInPage.hbs"}}
-        {{>a text="Profile" address="src/pages/profilePage/profilePage.hbs"}}
-        {{>a text="Dialogs" address="src/pages/dialogsPage/dialogsPage.hbs"}}
-        {{>a text="Error 404 page" address="/src/pages/error404Page/error404Page.hbs"}}
-        {{>a text="Error 500 page" address="/src/pages/error500Page/error500Page.hbs"}}
-      </div>
+      <main>
+        <h1>All pages list:</h1>
+      </main>
+      <ul>
+        <li>{{>a text="Sign in" address="src/pages/signInPage/signUpPage.hbs"}}</li>
+        <li>{{>a text="Log in" address="src/pages/logInPage/logInPage.hbs"}}</li>
+        <li>{{>a text="Profile" address="src/pages/profilePage/profilePage.hbs"}}</li>
+        <li>{{>a text="Dialogs" address="src/pages/dialogsPage/dialogsPage.hbs"}}</li>
+        <li>{{>a text="Error 404 page" address="/src/pages/error404Page/error404Page.hbs"}}</li>
+        <li>{{>a text="Error 500 page" address="/src/pages/error500Page/error500Page.hbs"}}</li>
+      </ul>
 	</body>
 </html>
