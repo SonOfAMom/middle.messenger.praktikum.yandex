@@ -10,6 +10,7 @@ pageTitle: "Profile"
 </head>
 <body>
 <main class="profile-page">
+  {{>avatar src="/src/static/img/avatarPlaceholder.jpg"}}
   {{>title text="User Name"}}
   <div>
     {{>formInput label="Email" name="email" type="text" value="email@gmail.com" readonly=true}}
@@ -18,6 +19,15 @@ pageTitle: "Profile"
     {{>formInput label="Second name" name="second_name" type="text" value="Name" readonly=true}}
     {{>formInput label="Display name" name="display_name" type="text" value="Lord" readonly=true}}
     {{>formInput label="Phone" name="phone" type="tel" value="+77878782348" readonly=true}}
+  </div>
+  <div class="profile-page__links">
+    {{>a class="profile-page__link" address="#" text="Edit profile info"}}
+    {{>a
+      class="profile-page__link"
+      address="/src/pages/changePasswordPage/changePasswordPage.hbs"
+      text="Change password"
+    }}
+    {{>a class="profile-page__link_exit" address="/index.hbs" text="Close"}}
   </div>
 </main>
 </body>

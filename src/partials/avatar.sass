@@ -1,0 +1,26 @@
+.avatar
+  object-fit: cover
+  cursor: pointer
+  position: relative
+
+  &__image
+    width: 130px
+    height: 130px
+    border-radius: 50%
+
+  &__change
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    display: flex
+    align-items: center
+    justify-content: center
+    color: $secondary-color
+    background: rgba(124, 124, 124, 0.72)
+    border-radius: 50%
+    visibility: hidden
+
+  &:hover &__change
+    visibility: visible
