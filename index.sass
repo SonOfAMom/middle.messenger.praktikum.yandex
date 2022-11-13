@@ -1,0 +1,43 @@
+@import '/src/constants/colors'
+
+@import 'src/partials/a'
+@import 'src/partials/button'
+@import 'src/partials/formInput'
+@import 'src/partials/title'
+@import 'src/partials/avatar'
+
+@import 'src/pages/signInPage/signUpPage'
+@import 'src/pages/logInPage/logInPage'
+@import 'src/pages/profilePage/profilePage'
+@import 'src/pages/changePasswordPage/changePasswordPage'
+@import 'src/pages/dialogsPage/dialogsPage'
+@import '/src/pages/error404Page/error404Page'
+@import '/src/pages/error500Page/error500Page'
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap')
+
+
+body
+  background-color: $background-color
+  font-family: 'Roboto', cursive
+
+.popup
+  min-width: 300px
+  background-color: #ffffff
+  border-radius: 12px
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  padding: 30px
+
+.invalid
+  color: $error-color
+  caret-color: $black-color
+
+.full-height-center
+  display: flex
+  flex-direction: column
+  align-items: center
+  justify-content: center
+  height: 100vh

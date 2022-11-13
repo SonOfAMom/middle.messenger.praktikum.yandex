@@ -1,0 +1,24 @@
+---
+pageTitle: "Main page"
+---
+<html lang="en">
+	<head>
+      <link rel="stylesheet" href="index.sass">
+      <title>
+        {{pageTitle}}
+      </title>
+	</head>
+	<body>
+      <main>
+        <h1>All pages list:</h1>
+      </main>
+      <ul>
+        <li>{{>a text="Sign in" address="src/pages/signInPage/signUpPage.hbs"}}</li>
+        <li>{{>a text="Log in" address="src/pages/logInPage/logInPage.hbs"}}</li>
+        <li>{{>a text="Profile" address="src/pages/profilePage/profilePage.hbs"}}</li>
+        <li>{{>a text="Dialogs" address="src/pages/dialogsPage/dialogsPage.hbs"}}</li>
+        <li>{{>a text="Error 404 page" address="/src/pages/error404Page/error404Page.hbs"}}</li>
+        <li>{{>a text="Error 500 page" address="/src/pages/error500Page/error500Page.hbs"}}</li>
+      </ul>
+	</body>
+</html>

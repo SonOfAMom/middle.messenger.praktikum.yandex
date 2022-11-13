@@ -1,0 +1,26 @@
+@import '/src/constants/colors'
+
+.form-input
+  display: flex
+  flex-direction: column
+  margin: 5px 0
+
+  &__label
+    color: #999
+    font-size: 9px
+    line-height: 9px
+    margin-bottom: 2px
+
+  &__input
+    border: none
+    border-bottom: 1px solid $primary-color
+
+    &:focus
+      outline: none
+
+    &:disabled
+      background-color: $secondary-color
+
+  &__errorMessage
+    font-size: 9px
+    color: $error-color
