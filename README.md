@@ -1,1 +1,1 @@
-- «[Ссылка на pull request]([https://endearing-pika-c12f1d.netlify.app/](https://github.com/yandex-praktikum/mf.messenger.praktikum.yandex.images/blob/master/mf/b.png](https://github.com/SonOfAMom/middle.messenger.praktikum.yandex/pull/9)»
+[Ссылка на pull request](https://github.com/SonOfAMom/middle.messenger.praktikum.yandex/pull/9)
