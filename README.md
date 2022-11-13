@@ -1,7 +1,7 @@
 ### Messenger
 
 This is the complete source code and the build instructions for the Messenger app.
-The project isn't ready yet buy you already can:
+The project isn't ready yet but you already can:
 
 - Run it
 - See design prototype
